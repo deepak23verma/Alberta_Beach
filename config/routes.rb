@@ -1,4 +1,6 @@
 AlbertaBeach::Application.routes.draw do
+  root "welcome#index"
+
   get "registrants" => "registrants#index"
 end
   
