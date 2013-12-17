@@ -1,5 +1,4 @@
-<h1>Total Registrants: <%= @registrants.size %></h1>
-
+<h1><%= pluralize(@registrants.size, 'Registrant') %></h1>
 
 <ul>
   <% @registrants.each do |registrant| %>
