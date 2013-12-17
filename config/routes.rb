@@ -1,4 +1,7 @@
 AlbertaBeach::Application.routes.draw do
+  get "registrants" => "registrants#index"
+end
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +56,4 @@ AlbertaBeach::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+
