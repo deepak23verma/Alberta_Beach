@@ -2,6 +2,7 @@ AlbertaBeach::Application.routes.draw do
   root "welcome#index"
 
   get "registrants" => "registrants#index"
+  get "registrants/new_registrant" => "registrants#new", as: "new_registrant"
 end
   
   # The priority is based upon order of creation: first created -> highest priority.
