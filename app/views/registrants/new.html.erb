@@ -1,1 +1,19 @@
 <h1>New Registrant Form</h1>
+
+<%= form_for(@registrant) do |f| %>
+  
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+  <br>
+  <%= f.label :email %>
+  <%= f.email_field :email, :placeholder => 'email' %>
+  <br>
+  <%= f.label :phone_number %>
+  <%= f.telephone_field :phone_number, :placeholder => '555-555-5555'%>
+
+<% end %>
+
+<%= submit_tag "Sign me up!" %>
