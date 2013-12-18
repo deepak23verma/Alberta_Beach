@@ -3,7 +3,7 @@
 <%= form_for(@registrant) do |f| %>
   
   <%= f.label :first_name %>
-  <%= f.text_field :first_name %>
+  <%= f.text_field :first_name, autofocus: true %>
 
   <%= f.label :last_name %>
   <%= f.text_field :last_name %>
@@ -14,7 +14,8 @@
   <%= f.label :phone_number %>
   <%= f.telephone_field :phone_number, :placeholder => '555-555-5555'%>
   <br>
-  <%= submit_tag "Sign me up!" %>
+  <%= submit_tag "Sign me up!" %> |
+  <%= link_to "Cancel", root_path %>
 
 <% end %>
 
