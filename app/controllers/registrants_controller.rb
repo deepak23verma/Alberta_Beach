@@ -13,7 +13,8 @@ class RegistrantsController < ApplicationController
   def create
     @registrant = Registrant.new(registrant_params)
     if @registrant.save
-      redirect_to root_path
+      redirect_to root_path, notice: "You're all set! Now you're in the know 
+      for everything Alberta Beach!"
     else
       render :new
     end
