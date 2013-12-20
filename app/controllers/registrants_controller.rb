@@ -23,7 +23,8 @@ private
 
     def registrant_params
       params.require(:registrant).
-        permit(:first_name, 
+        permit(
+          :first_name, 
           :last_name, 
           :email, 
           :phone_number, 
