@@ -12,8 +12,11 @@ class RegistrantsController < ApplicationController
 
   def create
     @registrant = Registrant.new(registrant_params)
-    @registrant.save
-    redirect_to root_path
+    if @registrant.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
 private 
