@@ -4,7 +4,7 @@ class Registrant < ActiveRecord::Base
   validates :email, :uniqueness => true 
   validates :email, format: {with: /(\S+)@(\S+)/}
 
-  HOW_HEARD = %w(Option1 Option2 Option3)
+  HOW_HEARD = ["Your Mom", "India TV", "Google", "My awesome realtors"]
   validates :how_heard, inclusion: { in: HOW_HEARD, 
     :message => "must be selected" }
 

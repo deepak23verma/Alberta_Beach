@@ -34,7 +34,12 @@ private
           :phone_number, 
           :receive_email,
           :how_heard,
-          :age_group)
+          :age_group,
+          :vacation,
+          :primary_residence,
+          :retirement,
+          :investment
+          )
     end
 
 end
