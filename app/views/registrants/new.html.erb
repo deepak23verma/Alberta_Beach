@@ -2,7 +2,7 @@
 
 <%= form_for(@registrant) do |f| %>
   
-  <%= render 'shared/errors' %>
+  <%= render 'shared/errors', object: @registrant %>
 
   <%= f.label :first_name %>
   <%= f.text_field :first_name, autofocus: true %>

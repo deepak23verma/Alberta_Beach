@@ -2,13 +2,13 @@ AlbertaBeach::Application.routes.draw do
   
   root "welcome#index"
 
+  resources :registrants, only: [:index, :new, :create]
+  resources :about_us, only: [:index]
+  resources :contact_us, only: [:index]
+
   # get "registrants" => "registrants#index"
   # get "registrants/new" => "registrants#new", as: "new_registrant"
   # post "registrants" => "registrants#create"
-
-  resources :registrants
-  resources :about_us, only: [:index]
-  resources :contact_us, only: [:index]
 end
   
   # The priority is based upon order of creation: first created -> highest priority.
