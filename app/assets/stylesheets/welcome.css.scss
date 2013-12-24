@@ -1,3 +1,7 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "colors";
+@import "fonts";
+
+.intro {
+  background-color: $background-offset;
+  padding: 10px;
+}

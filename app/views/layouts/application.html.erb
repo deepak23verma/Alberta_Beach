@@ -3,8 +3,8 @@
 <head>
   <title><%= @header %></title>
   <link href='http://fonts.googleapis.com/css?family=Chau+Philomene+One|Marmelad' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag "unsemantic-grid-responsive" %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= stylesheet_link_tag "unsemantic-grid-base" %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag %>
@@ -15,7 +15,7 @@
     <%= render 'layouts/navigation' %>
   </nav>
 
-  <div id="grid-container">
+  <div class="grid-container">
     
     
     <%= render 'layouts/flash' %>
