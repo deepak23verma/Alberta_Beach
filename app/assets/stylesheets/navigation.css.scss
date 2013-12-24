@@ -1,0 +1,26 @@
+@import "colors";
+
+#banner_logo {
+  background: url("logo_banner.jpg") no-repeat;
+  width: 960px;
+  height: 306px;
+  margin: 0px auto;
+  clear: both;
+}
+
+#nav ol {
+  float: right;
+  position: relative;
+}
+
+.nav_item {
+  float: left;
+  padding: 12px 10px;
+  border-right: 1px solid black;
+  letter-spacing: 1px;
+  background-color: $background-offset;
+}
+
+.nav_item:last-child {
+    border: none;
+  }
