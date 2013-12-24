@@ -8,6 +8,7 @@ AlbertaBeach::Application.routes.draw do
 
   resources :registrants
   resources :about_us, only: [:index]
+  resources :contact_us, only: [:index]
 end
   
   # The priority is based upon order of creation: first created -> highest priority.
