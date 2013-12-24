@@ -1,4 +1,5 @@
 @import "colors";
+@import "fonts";
 
 #banner_logo {
   background: url("logo_banner.jpg") no-repeat;
@@ -19,8 +20,8 @@
   border-right: 1px solid black;
   letter-spacing: 1px;
   background-color: $background-offset;
-  font-size: 1.25em;
-  font-family: 'Chau Philomene One', sans-serif;
+  font-size: $font__size_heading;
+  font-family: $font_family_heading;
 
 }
 
