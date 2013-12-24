@@ -2,16 +2,16 @@
 @import "fonts";
 
 #banner_logo {
-  background: url("logo_banner.jpg") no-repeat;
-  width: 960px;
-  height: 306px;
-  margin: 0px auto;
-  clear: both;
+  background: url("logo_banner.jpg") no-repeat center;
+  min-height: 23.3125em;
+  overflow: auto;
 }
 
-#nav ol {
-  float: right;
-  position: relative;
+#nav {
+  overflow: auto;
+  ol {
+    float: right;
+  }
 }
 
 .nav_item {

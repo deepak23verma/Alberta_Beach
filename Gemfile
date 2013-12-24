@@ -10,6 +10,9 @@ gem 'pg' # replacing SQlite w/PostgresSql
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
+#Unsemantic css grid system for rails
+gem 'unsemantic_rails'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
