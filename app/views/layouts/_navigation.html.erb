@@ -1,6 +1,7 @@
-
   <div class="grid-container">
-    <div id="banner_logo", class="grid-100">
+    
+    <!-- Navigation bar for a desktop screen -->
+    <div id="banner_logo", class="grid-100 hide-on-mobile">
       <div id="nav">
         <ol>
           <li class="nav_item"><%= link_to "Home", root_path %></li>
@@ -8,5 +9,18 @@
           <li class="nav_item"><%= link_to "Contact Us", contact_us_path %></li>
         </ol>
       </div>
-    </div>  
+    </div>
+
+    <!-- Navigation bar for mobile screen -->
+    <div class="hide-on-desktop left_justify">
+      <h3 class="mobile_banner">Alberta Beach Estates</h3>
+      <div id="nav">
+        <ol>
+          <li class="mobile_nav_item"><%= link_to "Home", root_path %></li>
+          <li class="mobile_nav_item"><%= link_to "About Alberta Beach Estates", about_us_path %></li>
+          <li class="mobile_nav_item"><%= link_to "Contact Us", contact_us_path %></li>
+        </ol>
+      </div>
+    </div>
+
   </div>

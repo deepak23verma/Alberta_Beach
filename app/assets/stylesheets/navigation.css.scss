@@ -7,11 +7,16 @@
   overflow: auto;
 }
 
+.mobile_banner {
+  text-align: left;
+  color: $non-standard-font;
+  display: inline-block;
+  font-size: $font_mobile_size_heading;
+}
+
 #nav {
   overflow: auto;
-  ol {
-    float: right;
-  }
+  // float: right;
 }
 
 .nav_item {
@@ -21,6 +26,17 @@
   letter-spacing: 1px;
   background-color: $background-offset;
   font-size: $font__size_heading;
+  font-family: $font_family_heading;
+
+}
+
+.mobile_nav_item {
+  float: left;
+  padding: 6px 5px;
+  border-right: 1px solid black;
+  letter-spacing: 1px;
+  background-color: $background-offset;
+  font-size: $font_mobile_size_heading;
   font-family: $font_family_heading;
 
 }
