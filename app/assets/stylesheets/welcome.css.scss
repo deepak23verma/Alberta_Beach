@@ -2,6 +2,25 @@
 @import "fonts";
 
 .intro {
-  background-color: $background-offset;
+  // background-color: $background-offset;
   padding: 10px;
+  // p {
+  //   text-align: left;
+  // }
 }
+
+.registration_link {
+  background-color: $large_button_background;
+  border-bottom: 5px solid darken($large_button_background, 25%);
+  border-radius: 10px;
+  color: $font_link_color;
+}
+
+.registration_link:hover {
+  background-color: darken($large_button_background, 25%);
+  border-bottom: 5px solid darken($large_button_background, 50%);
+}
+
+// .intro:first-child {
+//   border-right: 1px solid black;
+// }
