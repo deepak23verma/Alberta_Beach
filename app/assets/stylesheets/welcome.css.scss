@@ -24,3 +24,23 @@
 // .intro:first-child {
 //   border-right: 1px solid black;
 // }
+
+#interest_section {
+  margin-top: 5%;
+}
+.interest {
+  // border: 2px solid black;
+  border-radius: 10px;
+  img {
+    position: relative;
+    // top: -150px;
+  } 
+  .interest_content {
+    position: relative;
+  }
+}
+
+.interest:hover {
+  background-color: $background-offset;
+  color: $non-standard-font;
+}
