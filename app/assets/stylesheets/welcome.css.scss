@@ -24,14 +24,17 @@
   border-radius: 10px;
   img {
     position: relative;
-    width: 100%
+    width: 100%;
   } 
   .interest_content {
     position: relative;
+    color: $font-color;
   }
 }
 
 .interest:hover {
   background-color: $background-offset;
-  color: $non-standard-font;
+  .interest_content {
+    color: $non-standard-font;
+  }
 }

@@ -5,6 +5,9 @@ AlbertaBeach::Application.routes.draw do
   resources :registrants, only: [:index, :new, :create]
   resources :about_us, only: [:index]
   resources :contact_us, only: [:index]
+  resources :primary_residence, only: [:index]
+  resources :vacation_home, only: [:index]
+  resources :retirement_living, only: [:index]
 
   # get "registrants" => "registrants#index"
   # get "registrants/new" => "registrants#new", as: "new_registrant"
