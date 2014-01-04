@@ -4,22 +4,35 @@
   
   <%= render 'shared/errors', object: @registrant %>
 
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name, autofocus: true, required: true %>
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name, required: true %>
-  <br>
-  <%= f.label :email %>
-  <%= f.email_field :email, required: true %>
-  <br>
-  <%= f.label :phone_number %>
-  <%= f.telephone_field :phone_number %>
-  <br>
-  <%= f.label :age_group %>
+  <div class="field">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, autofocus: true, required: true %>
+  </div>
 
-  <%= f.label :how_heard, "How did you hear about Albert Beach?" %>
-  <%= f.select :how_heard, Registrant::HOW_HEARD, prompt: "Pick one", required: true %>
-  <br>
+  <div class="field">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name, required: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.email_field :email, required: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone_number %>
+    <%= f.telephone_field :phone_number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age_group %>
+  </div>
+
+  <div class="field">
+    <%= f.label :how_heard, "How did you hear about Albert Beach?" %>
+    <%= f.select :how_heard, Registrant::HOW_HEARD, prompt: "Pick one", required: true %>
+  </div>
+  
   <%= submit_tag "Sign me up!" %> |
   <%= link_to "Cancel", root_path %>
 

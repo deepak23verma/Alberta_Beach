@@ -10,11 +10,12 @@
   border-bottom: 5px solid darken($large_button_background, 25%);
   border-radius: 10px;
   color: $font_link_color;
+  transition: 0.5s;
 }
 
 .registration_link:hover {
-  background-color: darken($large_button_background, 25%);
-  border-bottom: 5px solid darken($large_button_background, 50%);
+  background-color: darken($large_button_background, 10%);
+  border-bottom: 5px solid darken($large_button_background, 20%);
 }
 
 #interest_section {
@@ -22,6 +23,7 @@
 }
 .interest {
   border-radius: 10px;
+  transition: 0.5s;
   img {
     position: relative;
     width: 100%;
