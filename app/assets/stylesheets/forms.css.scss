@@ -1,0 +1,11 @@
+@import "colors";
+@import "fonts";
+
+fieldset {
+  border: 1px solid $fieldset_outline
+}
+
+legend {
+  text-align: left;
+  margin-left: 25px;
+}
