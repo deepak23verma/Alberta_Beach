@@ -43,9 +43,21 @@
       <%= f.select :how_heard, Registrant::HOW_HEARD, prompt: "Pick one", required: true %>
     </div>
   </fieldset>
+
   <fieldset>
     <legend>Interests</legend>
-
+    <div class="field">
+      <%= f.label :vacation, "Vacation Property" %>
+      <%= f.check_box :vacation %>
+    </div>
+    <div class="field">
+      <%= f.label :primary_residence, "Primary Residence" %>
+      <%= f.check_box :primary_residence %>
+    </div>
+    <div class="field">
+      <%= f.label :retirement, "Retirement Living" %>
+      <%= f.check_box :retirement %>
+    </div>
   </fieldset>
   
   <!-- <button type="submit">Submit Form</button> -->
