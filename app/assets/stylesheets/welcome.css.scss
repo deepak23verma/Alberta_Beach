@@ -8,7 +8,7 @@
 .registration_link {
   background-color: $large_button_background;
   border-bottom: 5px solid darken($large_button_background, 25%);
-  border-radius: 10px;
+  // border-radius: 10px;
   color: $font_link_color;
   transition: 0.5s;
 }
@@ -22,8 +22,8 @@
   margin-top: 5%;
 }
 .interest {
-  border-radius: 10px;
-  transition: 1s;
+  // border-radius: 10px;
+  transition: 0.5s;
   img {
     position: relative;
     width: 100%;
