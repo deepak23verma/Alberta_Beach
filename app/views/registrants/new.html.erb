@@ -27,19 +27,19 @@
     </div>
 
     <div class="field">
-      <%= f.label :age_group %>
-      <%= radio_button("registrant", "age_group", "1") %>
+      <%= f.label :age_group, "What is your age?" %><br>
       <label for="registrant_age_group_1">30 or under</label>
-      <%= radio_button("registrant", "age_group", "2") %>
+      <%= radio_button("registrant", "age_group", "1") %>
       <label for="registrant_age_group_2">31 to 50</label>
+      <%= radio_button("registrant", "age_group", "2") %>
+       <label for="registrant_age_group_3">51 to 65</label>
       <%= radio_button("registrant", "age_group", "3") %>
-      <label for="registrant_age_group_3">51 to 65</label>
+     <label for="registrant_age_group_4">65+</label>
       <%= radio_button("registrant", "age_group", "4") %>
-      <label for="registrant_age_group_4">65+</label>
     </div>
 
     <div class="field">
-      <%= f.label :how_heard, "How did you hear about Albert Beach?" %>
+      <%= f.label :how_heard, "How did you hear about Alberta Beach?" %>
       <%= f.select :how_heard, Registrant::HOW_HEARD, prompt: "Pick one", required: true %>
     </div>
   </fieldset>
