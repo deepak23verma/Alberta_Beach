@@ -2,7 +2,7 @@
 @import "fonts";
 
 #banner_logo {
-  background: url("./logo_banner.jpg") no-repeat center;
+  background: url(image-path('background/logo_banner.jpg')) no-repeat center;
   min-height: 23.3125em;
   overflow: auto;
 }
@@ -27,7 +27,6 @@
   background-color: $background-offset;
   font-size: $font__size_heading;
   font-family: $font_family_heading;
-
 }
 
 .mobile_nav_item {
