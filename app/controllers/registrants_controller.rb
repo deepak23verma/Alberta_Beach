@@ -1,9 +1,9 @@
 class RegistrantsController < ApplicationController
   before_filter :set_header, :except => [:new]
   
-  def index
-    @registrants = Registrant.all
-  end
+  # def index
+  #   @registrants = Registrant.all
+  # end
 
   def new
     @registrant = Registrant.new
