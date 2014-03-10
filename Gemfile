@@ -3,11 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-# Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
-gem 'pg' # replacing SQlite w/PostgresSql
-gem 'rails_12factor'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -52,12 +47,18 @@ end
 # Use debugger
 gem 'debugger', group: [:development, :test]
 
-group :tools do
-  gem 'guard-rspec' #automatically runs tests
+# group :tools do
+#   gem 'guard-rspec' #automatically runs tests
+# end
+
+group :production do
+  gem 'pg' # replacing SQlite w/PostgresSql
+  gem 'rails_12factor'
 end
 
 group :development, :test do
-  gem "rspec", "~> 2.14.1"
+  gem 'sqlite3'
+  gem "rspec-rails", "~> 2.14.0"
   gem "factory_girl_rails", "~> 4.4.1"
   gem 'better_errors'
   gem 'binding_of_caller'
