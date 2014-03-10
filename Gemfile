@@ -56,15 +56,18 @@ group :tools do
   gem 'guard-rspec' #automatically runs tests
 end
 
-group :development do
-  gem 'rspec-rails'
+group :development, :test do
+  gem "rspec", "~> 2.14.1"
+  gem "factory_girl_rails", "~> 4.4.1"
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'pry-rails'
 end
 
 group :test do
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
-  gem 'capybara'
+  gem "faker", "~> 1.3.0"
+  gem "capybara", "~> 2.2.1"
+  gem "database_cleaner", "~> 1.2.0"
+  gem "launchy", "~> 2.4.2"
+  gem "selenium-webdriver", "~> 2.40.0"
 end
