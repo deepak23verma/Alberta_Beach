@@ -1,11 +1,11 @@
 @import "colors";
 @import "fonts";
 
-.intro {
+#intro {
   padding: 10px;
 }
 
-.registration_link {
+#registration_link {
   background-color: $large_button_background;
   border-bottom: 5px solid darken($large_button_background, 25%);
   // border-radius: 10px;
@@ -13,7 +13,7 @@
   transition: 0.5s;
 }
 
-.registration_link:hover {
+#registration_link:hover {
   background-color: darken($large_button_background, 10%);
   border-bottom: 5px solid darken($large_button_background, 20%);
 }

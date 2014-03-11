@@ -28,19 +28,9 @@ private
 
     def registrant_params
       params.require(:registrant).
-        permit(
-          :first_name, 
-          :last_name, 
-          :email, 
-          :phone_number, 
-          :receive_email,
-          :how_heard,
-          :age_group,
-          :vacation,
-          :primary_residence,
-          :retirement,
-          :investment
-          )
+        permit(:first_name, :last_name, :email, :phone_number, 
+          :receive_email, :how_heard, :age_group, :vacation,
+          :primary_residence, :retirement,:investment)
     end
 
 end
