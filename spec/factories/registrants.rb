@@ -7,5 +7,9 @@ FactoryGirl.define do
     email {Faker::Internet.email}
     age_group '1'
     how_heard 'Your Mom'
+
+    factory :invalid_contact do
+      first_name nil
+    end
   end
 end

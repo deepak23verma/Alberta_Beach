@@ -1,6 +1,7 @@
 class RegistrantsController < ApplicationController
   before_filter :set_header, :except => [:new]
   
+  # consider adding this with admin functionality
   # def index
   #   @registrants = Registrant.all
   # end
