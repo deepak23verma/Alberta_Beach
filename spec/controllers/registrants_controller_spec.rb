@@ -34,8 +34,16 @@ describe RegistrantsController do
     end
     
     context "with invalid attributes" do
-      xit "does not save registrant to the database"
-      xit "re-renders the :new template"
+      it "does not save registrant to the database" do
+        expect{
+          post :create, registrant: attributes_for(:invalid_registrant)
+        }.to_not change(Registrant, :count)
+      end
+      it "re-renders the :new template" do
+        post :create, registrant: attributes_for(:invalid_registrant)
+        expect(response).to render_template :new
+      end
     end
+    
   end
 end

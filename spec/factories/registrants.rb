@@ -8,7 +8,7 @@ FactoryGirl.define do
     age_group '1'
     how_heard 'Your Mom'
 
-    factory :invalid_contact do
+    factory :invalid_registrant do
       first_name nil
     end
   end
