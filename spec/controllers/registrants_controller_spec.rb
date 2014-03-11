@@ -18,10 +18,21 @@ describe RegistrantsController do
 
   describe "POST #create" do
     context "with valid attributes" do
-      xit "saves the registrant to the database"
-      xit "assigns a header to @header"
-      xit "redirects to the rooth_path"
+      it "saves the registrant to the database" do
+        expect{
+          post :create, registrant: attributes_for(:registrant)
+        }.to change(Registrant, :count).by(1)
+      end
+      it "assigns a header to @header" do
+        post :create, registrant: attributes_for(:registrant)
+        expect(assigns(:header)).to eq "Welcome to Alberta Beach"
+      end
+      it "redirects to the rooth_path" do
+        post :create, registrant: attributes_for(:registrant)
+        expect(response).to redirect_to root_path
+      end
     end
+    
     context "with invalid attributes" do
       xit "does not save registrant to the database"
       xit "re-renders the :new template"
