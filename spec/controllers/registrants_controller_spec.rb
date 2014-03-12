@@ -6,10 +6,6 @@ describe RegistrantsController do
       get :new
       expect(assigns(:registrant)).to be_a_new(Registrant)
     end
-    it "assigns a header to @header" do
-      get :new
-      expect(assigns(:header)).to eq "Alberta Beach Registration"
-    end
     it "renders the :new template" do
       get :new
       expect(response).to render_template :new
@@ -22,10 +18,6 @@ describe RegistrantsController do
         expect{
           post :create, registrant: attributes_for(:registrant)
         }.to change(Registrant, :count).by(1)
-      end
-      it "assigns a header to @header" do
-        post :create, registrant: attributes_for(:registrant)
-        expect(assigns(:header)).to eq "Welcome to Alberta Beach"
       end
       it "redirects to the rooth_path" do
         post :create, registrant: attributes_for(:registrant)

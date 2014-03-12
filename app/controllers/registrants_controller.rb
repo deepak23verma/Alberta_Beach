@@ -1,5 +1,4 @@
 class RegistrantsController < ApplicationController
-  before_filter :set_header, :except => [:new]
   
   # consider adding this with admin functionality
   # def index
@@ -8,7 +7,6 @@ class RegistrantsController < ApplicationController
 
   def new
     @registrant = Registrant.new
-    @header = "Alberta Beach Registration"
   end
 
   def create
@@ -22,9 +20,6 @@ class RegistrantsController < ApplicationController
   end
 
 private 
-    def set_header
-      @header = "Welcome to Alberta Beach"
-    end
 
     def registrant_params
       params.require(:registrant).
