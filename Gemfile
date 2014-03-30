@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'dotenv-rails', :groups => [:development, :test]
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.4'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
